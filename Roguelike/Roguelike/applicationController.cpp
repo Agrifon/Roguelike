@@ -1,5 +1,7 @@
 #include "application.h"
 
+extern GameLevel gamelevel;
+
 void Application::run()
 {
 	while (window->isOpen())
@@ -12,6 +14,20 @@ void Application::run()
 				window->close();
 			}
 		}
+
+		if (gamelevel == MENU)
+		{
+			
+		}
+
+		if (gamelevel == WORLD)
+		{
+			
+		}
+
+		window->clear(sf::Color::Black);
+
+		level->run();
 
 		draw();
 	}

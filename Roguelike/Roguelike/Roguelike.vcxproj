@@ -148,10 +148,15 @@
     <ClCompile Include="applicationModel.cpp" />
     <ClCompile Include="applicationView.cpp" />
     <ClCompile Include="GlobalVar.cpp" />
+    <ClCompile Include="LevelMenu.cpp" />
+    <ClCompile Include="LevelWorld.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="application.h" />
+    <ClInclude Include="enumGameLevel.h" />
+    <ClInclude Include="GlobalVar.h" />
+    <ClInclude Include="LevelBase.h" />
     <ClInclude Include="main.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

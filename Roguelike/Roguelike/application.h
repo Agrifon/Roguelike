@@ -2,11 +2,14 @@
 #define APPLICATION_H
 
 #include "main.h"
+#include "enumGameLevel.h"
+#include "LevelBase.h"
 
 class Application
 {
 private:
 	sf::RenderWindow* window;
+	LevelBase* level;
 
 	void draw();
 
