@@ -2,6 +2,7 @@
 #define LEVELBASE_H
 
 #include "main.h"
+#include "WidgetBase.h"
 
 class LevelBase
 {
@@ -16,21 +17,10 @@ class LevelMenu : public LevelBase
 private:
 	sf::RenderWindow* window;
 
-	sf::Image buttonContinueImg;
-	sf::Texture buttonContinueTexture;
-	sf::Sprite buttonContinueSprite;
-
-	sf::Image buttonNewGameImg;
-	sf::Texture buttonNewGameTexture;
-	sf::Sprite buttonNewGameSprite;
-
-	sf::Image fieldForIpImg;
-	sf::Texture fieldForIpTexture;
-	sf::Sprite fieldForIpSprite;
-
-	sf::Image buttonExitImg;
-	sf::Texture buttonExitTexture;
-	sf::Sprite buttonExitSprite;
+	Widget* buttonContinue;
+	Widget* buttonNewGame;
+	Widget* fieldIP;
+	Widget* buttonExit;
 
 public:
 	LevelMenu(sf::RenderWindow* window);

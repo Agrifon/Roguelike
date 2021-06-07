@@ -8,26 +8,15 @@ LevelMenu::LevelMenu(sf::RenderWindow* window)
 {
 	this->window = window;
 
-	buttonContinueImg.loadFromFile("C:/git/Roguelike/img/Menu/Button/Continue.png");
-	buttonContinueTexture.loadFromImage(buttonContinueImg);
-	buttonContinueSprite.setTexture(buttonContinueTexture);
+	buttonContinue = new Button("C:/git/Roguelike/img/Menu/Button/Continue.png");
+	buttonNewGame = new Button("C:/git/Roguelike/img/Menu/Button/NewGame.png");
+	fieldIP = new Field("C:/git/Roguelike/img/Menu/Button/ForText.png");
+	buttonExit = new Button("C:/git/Roguelike/img/Menu/Button/Exit.png");
 
-	buttonNewGameImg.loadFromFile("C:/git/Roguelike/img/Menu/Button/NewGame.png");
-	buttonNewGameTexture.loadFromImage(buttonNewGameImg);
-	buttonNewGameSprite.setTexture(buttonNewGameTexture);
-
-	fieldForIpImg.loadFromFile("C:/git/Roguelike/img/Menu/Button/ForText.png");
-	fieldForIpTexture.loadFromImage(fieldForIpImg);
-	fieldForIpSprite.setTexture(fieldForIpTexture);
-
-	buttonExitImg.loadFromFile("C:/git/Roguelike/img/Menu/Button/Exit.png");
-	buttonExitTexture.loadFromImage(buttonExitImg);
-	buttonExitSprite.setTexture(buttonExitTexture);
-
-	buttonContinueSprite.setPosition(windows_width / 2 - 300, 200);
-	buttonNewGameSprite.setPosition( windows_width / 2 - 300, 400);
-	fieldForIpSprite.setPosition(    windows_width / 2 - 300, 600);
-	buttonExitSprite.setPosition(    windows_width / 2 - 300, 800);
+	buttonContinue->setPosition(windows_width / 2 - 300, 200);
+	buttonNewGame->setPosition( windows_width / 2 - 300, 400);
+	fieldIP->setPosition(		windows_width / 2 - 300, 600);
+	buttonExit->setPosition(	windows_width / 2 - 300, 800);
 }
 
 LevelMenu::~LevelMenu()
@@ -42,10 +31,10 @@ void LevelMenu::init()
 
 void LevelMenu::run()
 {
-	window->draw(buttonContinueSprite);
-	window->draw(buttonNewGameSprite);
-	window->draw(fieldForIpSprite);
-	window->draw(buttonExitSprite);
+	buttonContinue->draw(window);
+	buttonNewGame->draw(window);
+	fieldIP->draw(window);
+	buttonExit->draw(window);
 }
 
 void LevelMenu::end()
