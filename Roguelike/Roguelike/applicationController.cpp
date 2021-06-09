@@ -13,6 +13,10 @@ void Application::run()
 			}
 		}
 
+		window->clear(sf::Color::Black);
+
+		windowController->run();
+
 		draw();
 	}
 }

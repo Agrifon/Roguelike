@@ -147,12 +147,22 @@
     <ClCompile Include="applicationController.cpp" />
     <ClCompile Include="applicationModel.cpp" />
     <ClCompile Include="applicationView.cpp" />
+    <ClCompile Include="Button.cpp" />
+    <ClCompile Include="Field.cpp" />
     <ClCompile Include="GlobalVar.cpp" />
+    <ClCompile Include="LevelMenu.cpp" />
+    <ClCompile Include="LevelWorld.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="windowController.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="application.h" />
+    <ClInclude Include="enumGameLevel.h" />
+    <ClInclude Include="GlobalVar.h" />
+    <ClInclude Include="LevelBase.h" />
     <ClInclude Include="main.h" />
+    <ClInclude Include="WidgetBase.h" />
+    <ClInclude Include="windowController.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

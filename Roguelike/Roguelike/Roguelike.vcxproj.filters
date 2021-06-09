@@ -16,22 +16,46 @@
     <Filter Include="Исходные файлы\GlobalVar">
       <UniqueIdentifier>{8753439f-be7e-429d-93ef-3d889035380f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Исходные файлы\LevelBase">
+      <UniqueIdentifier>{3af62ce5-89a5-4812-bd6b-54b26a625c64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\WidgetBase">
+      <UniqueIdentifier>{9c10e329-0002-41d4-ac69-529a99f8f96f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\MVC">
+      <UniqueIdentifier>{e1ef0f5c-4f0f-4695-bf7c-e9924e8862b5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
-    <ClCompile Include="applicationModel.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="GlobalVar.cpp">
       <Filter>Исходные файлы\GlobalVar</Filter>
     </ClCompile>
     <ClCompile Include="applicationController.cpp">
+      <Filter>Исходные файлы\MVC</Filter>
+    </ClCompile>
+    <ClCompile Include="LevelMenu.cpp">
+      <Filter>Исходные файлы\LevelBase</Filter>
+    </ClCompile>
+    <ClCompile Include="LevelWorld.cpp">
+      <Filter>Исходные файлы\LevelBase</Filter>
+    </ClCompile>
+    <ClCompile Include="Button.cpp">
+      <Filter>Исходные файлы\WidgetBase</Filter>
+    </ClCompile>
+    <ClCompile Include="Field.cpp">
+      <Filter>Исходные файлы\WidgetBase</Filter>
+    </ClCompile>
+    <ClCompile Include="windowController.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="applicationModel.cpp">
+      <Filter>Исходные файлы\MVC</Filter>
+    </ClCompile>
     <ClCompile Include="applicationView.cpp">
-      <Filter>Исходные файлы</Filter>
+      <Filter>Исходные файлы\MVC</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -39,6 +63,21 @@
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="application.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="GlobalVar.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="enumGameLevel.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="LevelBase.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="WidgetBase.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="windowController.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
