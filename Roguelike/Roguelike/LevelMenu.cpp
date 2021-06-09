@@ -21,7 +21,11 @@ LevelMenu::LevelMenu(sf::RenderWindow* window)
 
 LevelMenu::~LevelMenu()
 {
-
+	if (window != nullptr)
+	{
+		delete window;
+		window = nullptr;
+	}
 }
 
 void LevelMenu::init()
@@ -39,9 +43,5 @@ void LevelMenu::run()
 
 void LevelMenu::end()
 {
-	if (window != nullptr)
-	{
-		delete window;
-		window = nullptr;
-	}
+	
 }

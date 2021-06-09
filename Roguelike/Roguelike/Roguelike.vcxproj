@@ -153,6 +153,7 @@
     <ClCompile Include="LevelMenu.cpp" />
     <ClCompile Include="LevelWorld.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="windowController.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="application.h" />
@@ -161,6 +162,7 @@
     <ClInclude Include="LevelBase.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="WidgetBase.h" />
+    <ClInclude Include="windowController.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

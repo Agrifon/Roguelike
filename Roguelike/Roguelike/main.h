@@ -4,6 +4,7 @@
 //STD
 #include <iostream>
 #include <thread>
+#include <string>
 
 //SFML
 #include <SFML/Graphics.hpp>

@@ -3,13 +3,13 @@
 
 #include "main.h"
 #include "enumGameLevel.h"
-#include "LevelBase.h"
+#include "windowController.h"
 
 class Application
 {
 private:
 	sf::RenderWindow* window;
-	LevelBase* level;
+	WindowController* windowController;
 
 	void draw();
 

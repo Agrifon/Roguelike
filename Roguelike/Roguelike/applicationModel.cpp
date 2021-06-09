@@ -1,7 +1,5 @@
 #include "application.h"
 
-extern GameLevel gamelevel;
-
 extern int windows_width;
 extern int windows_height;
 
@@ -23,9 +21,7 @@ void Application::init()
 
 	window = new sf::RenderWindow(sf::VideoMode(windows_width, windows_height), "Roguelike", sf::Style::Default, settings);
 
-	level = new LevelMenu(window);
-
-	gamelevel = MENU;
+	windowController = new WindowController(window);
 }
 
 void Application::end()
@@ -34,5 +30,11 @@ void Application::end()
 	{
 		delete window;
 		window = nullptr;
+	}
+
+	if (windowController != nullptr)
+	{
+		delete windowController;
+		windowController = nullptr;
 	}
 }
